@@ -55,7 +55,7 @@ export default function AgencySection() {
         {/* Right Section - Funnel Image */}
         <div className="flex justify-center md:justify-end">
           <Image
-            src="/Agency-Icons/Funnel.png"
+            src="/Agency-Icons/funnel.png"
             alt="Lead Funnel"
             width={480}
             height={480}
