@@ -24,13 +24,15 @@ export default function Header() {
         {/* Logo */}
         <a href="/" className="flex items-center">
           <Image
-            src="/Logos/IntentCept.png"
-            alt="IntentCept Logo"
-            width={24}
-            height={24}
-            priority
-            className="h-10 sm:h-12 w-auto object-contain scale-400"
-          />
+              src="/Logos/IntentCept.png"
+              alt="IntentCept Logo"
+              width={100}
+              height={100}
+              priority
+              className="h-10 sm:h-12 w-auto object-contain scale-250"
+
+            />
+
         </a>
 
         {/* Desktop Navigation */}

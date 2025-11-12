@@ -42,7 +42,7 @@ export default function HeroSection() {
           <Image
             src="/Logos/Graphics.png"
             alt="IntentCept Growth Diagram"
-            width={650}
+            width={550}
             height={450}
             sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 33vw"
             className="w-full h-auto rounded-lg drop-shadow-lg transition-transform duration-500 hover:scale-105"

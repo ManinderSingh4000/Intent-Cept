@@ -7,7 +7,7 @@ const nextConfig = {
   compress: true,
   images: {
     formats: ["image/avif", "image/webp"],
-    unoptimized: false,
+    // unoptimized: false,
   },
   /* config options here */
   reactCompiler: true,
