@@ -5,15 +5,15 @@ import { Mail, Phone } from "lucide-react";
 export default function ContactPage() {
   const team = [
     {
-      name: "Daniel Swick",
+      name: "Liam Anderson",
       title: "Founder – CTO",
-      email: "Daniel@intentcept.com",
+      email: "Liam.anderson@intentcept.com",
       img: "/Contact-Team/daniel.png",
     },
     {
-      name: "Casey Hamilton",
+      name: "Marcus Bennett",
       title: "Founder – CSO",
-      email: "casey@intentcept.com",
+      email: "marcus.bennett@intentcept.com",
       img: "/Contact-Team/casey.png",
     },
   ];
@@ -37,7 +37,7 @@ export default function ContactPage() {
           <div className="flex items-center justify-center gap-2">
             <div className="text-center md:text-left">
               <p className="font-semibold">@ Email Address</p>
-              <p className="text-gray-600 text-sm">
+              <p className="text-black mt-2 text-sm">
                 support@intentcept.com
               </p>
             </div>
@@ -46,7 +46,7 @@ export default function ContactPage() {
           <div className="flex items-center justify-center gap-2">
             <div className="text-center md:text-left">
               <p className="font-semibold">📞 Office Number</p>
-              <p className="text-gray-600 text-sm">(740) 527-8020</p>
+              <p className="text-black mt-2 text-sm">(740) 527-8020</p>
             </div>
           </div>
         </div>
@@ -62,8 +62,8 @@ export default function ContactPage() {
                 alt={person.name}
                 className="w-32 h-32 rounded-full object-cover border border-gray-300 mb-4"
               />
-              <h4 className="font-semibold text-gray-900">{person.name}</h4>
-              <p className="text-gray-600 text-sm">{person.title}</p>
+              <h3 className="font-bold text-black">{person.name}</h3>
+              <p className="text-black mt-2 text-sm">{person.title}</p>
               <p className="text-gray-600 text-sm mt-2 flex items-center gap-1">
                 <Mail className="w-4 h-4 text-[#a53000]" />
                 <a
