@@ -3,7 +3,7 @@
 import Home from "./app-page";
 
 import { SpeedInsights } from "@vercel/speed-insights/next"
-
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: "IntentCept | Intelligent Acquisition System",
@@ -43,6 +43,7 @@ export default function HomePage() {
     <main>
       <Home/>
       <SpeedInsights/>
+      <Analytics/>
 
     </main>
   );
