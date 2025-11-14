@@ -2,7 +2,7 @@
 
 import Home from "./app-page";
 
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 export const metadata = {
@@ -42,7 +42,7 @@ export default function HomePage() {
   return (
     <main>
       <Home/>
-
+      <SpeedInsights/>
 
     </main>
   );
