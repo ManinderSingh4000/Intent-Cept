@@ -1,4 +1,3 @@
-"use client"
 
 import React from "react";
 import Header from "../components/shared/Header";
@@ -12,6 +11,25 @@ import HowItWorks from "../components/HowItWorks";
 import IntegrationsGrid from "../components/IntegrationsGrid";
 import Services from "../components/Services";
 
+export const metadata = {
+  title: "Pricing | IntentCept",
+  description:
+    "Choose the perfect IntentCept plan to scale your agency with unlimited leads, automation, and integrations.",
+  keywords: [
+    "IntentCept Pricing",
+    "Lead Generation Pricing",
+    "Marketing Automation Plans",
+    "AI Sales Platform",
+    "Agency Growth Tools",
+  ],
+  openGraph: {
+    title: "IntentCept Pricing",
+    description:
+      "Find the right IntentCept plan to grow your agency — transparent pricing for every stage.",
+    url: "https://intentcept.vercel.app/pricing",
+    images: ["/og-image.png"],
+  },
+};
 
 
 export default function PricingPage() {

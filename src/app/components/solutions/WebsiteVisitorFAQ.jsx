@@ -61,7 +61,7 @@ export default function WebsiteVisitorFAQ() {
 
       <div className="mt-10 md:mt-12">
         <a href="/book-demo/">
-          <button className="bg-[#a53000] text-white px-8 sm:px-10 py-3 rounded-md font-semibold hover:bg-[#8f2800] text-sm sm:text-base transition-all duration-300">
+          <button className="bg-[#B31C04] text-white px-8 sm:px-10 py-3 rounded-md font-semibold hover:bg-[#8f2800] text-sm sm:text-base transition-all duration-300">
             Get Instant Access
           </button>
         </a>

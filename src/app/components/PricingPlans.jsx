@@ -68,7 +68,7 @@ export default function PricingSection() {
 
             {/* Button */}
             <a href="/book-demo/" className="w-full mt-auto">
-              <button className="w-full bg-[#a53000] hover:bg-[#8f2800] text-white font-semibold py-3 rounded-sm transition-all">
+              <button className="w-full bg-[#B31C04] hover:bg-[#8f2800] text-white font-semibold py-3 rounded-sm transition-all">
                 GET STARTED
               </button>
             </a>

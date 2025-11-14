@@ -29,7 +29,7 @@ export default function HeroSection() {
         {/* CTA */}
         <div>
           <a href="/book-demo/">
-            <button className="bg-[#a53000] text-white px-6 sm:px-8 py-3 rounded-md font-semibold text-base sm:text-lg hover:bg-[#8f2800] shadow-md hover:shadow-lg transition-all duration-300">
+            <button className="bg-[#B31C04] text-white px-6 sm:px-8 py-3 rounded-md font-semibold text-base sm:text-lg hover:bg-[#8f2800] shadow-md hover:shadow-lg transition-all duration-300">
               Get Started
             </button>
           </a>

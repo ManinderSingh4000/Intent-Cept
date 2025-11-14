@@ -5,14 +5,14 @@ import Image from "next/image";
 export default function BookDemoPage() {
   const founders = [
     {
-      name: "Daniel Swick",
+      name: "Liam Anderson",
       title: "Founder – CTO",
-      img: "/Contact-Team/daniel.png",
+      img: "/Contact-Team/Liam-Anderson.png",
     },
     {
-      name: "Casey Hamilton",
+      name: "Marcus Bennett",
       title: "Founder – CSO",
-      img: "/Contact-Team/casey.png",
+      img: "/Contact-Team/Marcus-Bennett.png",
     },
   ];
 
@@ -46,10 +46,10 @@ export default function BookDemoPage() {
                 <Image
                   src={person.img}
                   alt={person.name}
-                  width={50}
+                  width={100}
                   height={100}
-                  quality={80}
-                  className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover mb-2"
+                  quality={90}
+                  className="w-32 h-32 rounded-full object-cover border border-gray-300 mb-4"
                   priority
                 />
                 <h4 className="font-semibold text-gray-900 text-[15px] sm:text-[16px]">
@@ -174,7 +174,7 @@ export default function BookDemoPage() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-[#a53000] text-white font-semibold py-3 sm:py-3.5 rounded-md hover:bg-[#8f2800] transition-all duration-300 mt-4 text-sm sm:text-base"
+              className="w-full bg-[#B31C04] text-white font-semibold py-3 sm:py-3.5 rounded-md hover:bg-[#8f2800] transition-all duration-300 mt-4 text-sm sm:text-base"
             >
               Book A Demo Now
             </button>

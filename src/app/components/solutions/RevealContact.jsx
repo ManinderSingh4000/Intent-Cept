@@ -57,7 +57,7 @@ export default function RevealContact() {
       {/* CTA */}
       <div className="mt-12">
         <a href="/book-demo/">
-          <button className="bg-[#a53000] text-white font-semibold px-8 sm:px-10 py-3 rounded-md hover:bg-[#8f2800] text-sm sm:text-base transition-all duration-300">
+          <button className="bg-[#B31C04] text-white font-semibold px-8 sm:px-10 py-3 rounded-md hover:bg-[#8f2800] text-sm sm:text-base transition-all duration-300">
             Reveal My Hidden Leads
           </button>
         </a>

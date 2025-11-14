@@ -108,7 +108,7 @@ export default function IntegrationsGrid() {
       {/* CTA */}
       <div className="mt-14">
         <a href="/book-demo/">
-          <button className="bg-[#a53000] text-white font-semibold px-8 py-3 rounded-md hover:bg-[#8f2800] transition-all duration-300">
+          <button className="bg-[#B31C04] text-white font-semibold px-8 py-3 rounded-md hover:bg-[#8f2800] transition-all duration-300">
             Get Started
           </button>
         </a>

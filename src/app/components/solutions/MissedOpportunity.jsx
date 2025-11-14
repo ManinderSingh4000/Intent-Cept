@@ -27,7 +27,7 @@ export default function MissedOpportunity() {
 
         <div className="mt-8">
           <a href="/book-demo/">
-            <button className="bg-[#a53000] text-white px-8 py-3 rounded-md font-semibold text-sm sm:text-base hover:bg-[#8f2800] transition-all duration-300">
+            <button className="bg-[#B31C04] text-white px-8 py-3 rounded-md font-semibold text-sm sm:text-base hover:bg-[#8f2800] transition-all duration-300">
               Reveal My Hidden Leads
             </button>
           </a>

@@ -33,7 +33,7 @@ export default function Integrations() {
     <section   className="py-16 text-center bg-white relative overflow-hidden font-sans">
       {/* Heading */}
       <h2 className="text-4xl md:text-5xl  font-bold text-gray-800 mb-10 tracking-relaxed">
-       <span className="text-4xl md:text-5xl text-[#a53000]">Integrate</span> with your <span className="text-[#a53000]">tools</span> 
+       <span className="text-4xl md:text-5xl text-[#B31C04]">Integrate</span> with your <span className="text-[#B31C04]">tools</span> 
       </h2>
 
 

@@ -8,13 +8,13 @@ export default function ContactPage() {
       name: "Liam Anderson",
       title: "Founder – CTO",
       email: "Liam.anderson@intentcept.com",
-      img: "/Contact-Team/daniel.png",
+      img: "/Contact-Team/Liam-Anderson.png",
     },
     {
       name: "Marcus Bennett",
       title: "Founder – CSO",
       email: "marcus.bennett@intentcept.com",
-      img: "/Contact-Team/casey.png",
+      img: "/Contact-Team/Marcus-Bennett.png",
     },
   ];
 
@@ -46,7 +46,7 @@ export default function ContactPage() {
           <div className="flex items-center justify-center gap-2">
             <div className="text-center md:text-left">
               <p className="font-semibold">📞 Office Number</p>
-              <p className="text-black mt-2 text-sm">(740) 527-8020</p>
+              <p className="text-black mt-2 text-sm">(730) 738-2367</p>
             </div>
           </div>
         </div>
@@ -111,7 +111,7 @@ export default function ContactPage() {
 
           <button
             type="submit"
-            className="bg-[#a53000] text-white font-semibold py-3 rounded-sm hover:bg-[#8f2800] transition-all"
+            className="bg-[#B31C04] text-white font-semibold py-3 rounded-sm hover:bg-[#8f2800] transition-all"
           >
             SEND!
           </button>

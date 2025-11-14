@@ -88,7 +88,7 @@ export default function FAQSection() {
         {/* CTA Button */}
         <div className="mt-14 flex justify-center">
           <a href="/book-demo/">
-            <button className="bg-[#b13200] text-white font-semibold px-10 py-3 rounded-md hover:bg-[#922800] transition-all duration-300">
+            <button className="bg-[#B31C04] text-white font-semibold px-10 py-3 rounded-md hover:bg-[#922800] transition-all duration-300">
               GET INSTANT ACCESS
             </button>
           </a>

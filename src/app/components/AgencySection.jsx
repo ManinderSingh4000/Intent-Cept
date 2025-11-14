@@ -45,7 +45,7 @@ export default function AgencySection() {
 
           <div className="mt-8">
             <a href="/pricing/">
-              <button className="bg-[#b53000] text-white px-6 py-3 rounded-md font-medium hover:bg-[#8f2800] transition">
+              <button className="bg-[#B31C04] text-white px-6 py-3 rounded-md font-medium hover:bg-[#8f2800] transition">
                 Start Scaling Your Agency Now!
               </button>
             </a>

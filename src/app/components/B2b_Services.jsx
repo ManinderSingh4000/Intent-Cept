@@ -140,7 +140,7 @@ return (
             {/* BUTTON */}
             <div className="mt-8 mb-14 flex justify-center md:justify-start">
               <a href="/book-demo/">
-                <button className="bg-[#a53000] text-white px-8 py-3 rounded-md font-semibold text-[15px] hover:bg-[#8f2800] transition-all duration-300 shadow-md hover:shadow-lg">
+                <button className="bg-[#B31C04] text-white px-8 py-3 rounded-md font-semibold text-[15px] hover:bg-[#8f2800] transition-all duration-300 shadow-md hover:shadow-lg">
                   Get Started
                 </button>
               </a>
