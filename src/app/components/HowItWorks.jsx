@@ -49,12 +49,12 @@ export default function HowItWorks() {
             </div>
 
             {/* Title */}
-            <h3 className="text-lg font-semibold text-gray-900">
+            <h3 className="text-lg mb-4 font-semibold text-gray-900">
               {step.title}
             </h3>
 
             {/* Description */}
-            <p className="text-gray-600 text-[15px] leading-relaxed">
+            <p className="text-gray-600 mb-4 text-[15px] leading-relaxed">
               {step.desc}
             </p>
           </div>

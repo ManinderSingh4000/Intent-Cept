@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -7,33 +7,69 @@ export default function LeadDataFeatures() {
     {
       title: "Pinpoint-accurate contacts—no fillers, just your ideal leads",
       description:
-        "Stop wasting time marketing to the masses. Start with search-based intent and send your marketing campaigns into overdrive. Enhanced Search ID delivers only the most relevant, high-intent contacts based on your exact keyword criteria.",
+        "Stop wasting time marketing to the masses. Start with search-based intent and send your marketing campaigns into overdrive.",
       points: [
-        "You're flying blind. Stop guessing who’s actually in the market for your service—wasting ad dollars on people who may never buy.",
-        "You're targeting too late. By the time you reach most prospects with traditional marketing, they’ve already chosen a competitor. Enhanced Search ID lets you reach them while they’re actively searching—not after the fact.",
-        "You're paying for noise, not intent. Most marketing platforms charge you to reach broad audiences, hoping some are interested. Without Enhanced Search ID, you’re buying impressions—not buyers.",
+        {
+          title: "You're flying blind",
+          description:
+            "Stop guessing who’s actually in the market for your service—wasting ad dollars on people who may never buy.",
+        },
+        {
+          title: "You're targeting too late",
+          description:
+            "By the time you reach most prospects with traditional marketing, they’ve already chosen a competitor. Search ID reaches them while searching.",
+        },
+        {
+          title: "You're paying for noise, not intent",
+          description:
+            "Most platforms charge you to reach broad audiences. Without Search ID, you’re paying for impressions—not buyers.",
+        },
       ],
       image: "/illustrations/Capture-Leads.png",
     },
     {
       title: "Get data instantly—skip the scraping, save time",
       description:
-        "No more waiting for lead lists or relying on scraping tools that may break or violate terms of service. With Search ID, your leads are delivered in real time.",
+        "No more waiting for lead lists or scraping tools. With Search ID, your leads are delivered in real time.",
       points: [
-        "No Third-Party Delays — Cut out the middlemen. Our proprietary system ensures that data is delivered directly and securely—without bottlenecks.",
-        "Built for Speed — Whether you’re scaling fast or handling high volumes, our infrastructure is optimized for real-time performance.",
-        "Smarter Outreach, Better Results — With cleaner, more relevant data, your campaigns convert faster and with higher efficiency.",
+        {
+          title: "No Third-Party Delays",
+          description:
+            "Our proprietary system delivers data securely and instantly—without bottlenecks.",
+        },
+        {
+          title: "Built for Speed",
+          description:
+            "Whether expanding or managing high volume, the infrastructure is optimized for real-time performance.",
+        },
+        {
+          title: "Smarter Outreach, Better Results",
+          description:
+            "Cleaner, more relevant data means higher conversions with less effort.",
+        },
       ],
       image: "/illustrations/white-labeled.png",
     },
     {
       title: "100% legally obtained data that is ready to use",
       description:
-        "Trust and compliance are at the core of Enhanced Search ID. All data is ethically sourced and adheres to global privacy standards.",
+        "All data is ethically sourced and adheres to global privacy standards.",
       points: [
-        "Enterprise-Grade Security — Data is encrypted, stored securely, and access is strictly permission-based.",
-        "Ethically Sourced Data — Our data is collected through consent-based, privacy-compliant methods. Every contact meets regulatory standards, ensuring your campaigns are both effective and responsible.",
-        "Peace of Mind — Use the data confidently for outreach, remarketing, and analytics—knowing it meets all legal requirements.",
+        {
+          title: "Enterprise-Grade Security",
+          description:
+            "Data is encrypted, securely stored, and access-controlled for maximum safety.",
+        },
+        {
+          title: "Ethically Sourced Data",
+          description:
+            "Collected through consent-based and privacy-compliant methods that meet global regulations.",
+        },
+        {
+          title: "Peace of Mind",
+          description:
+            "Use the data confidently across outreach, remarketing, and analytics.",
+        },
       ],
       image: "/illustrations/Target.png",
     },
@@ -56,8 +92,8 @@ export default function LeadDataFeatures() {
                   src={feature.image}
                   alt={feature.title}
                   fill
-                  className="object-contain "
-                  // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 500px"
+                  className="object-contain"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -67,19 +103,36 @@ export default function LeadDataFeatures() {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug">
                 {feature.title}
               </h2>
+
               <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                 {feature.description}
               </p>
-              <ul className="space-y-3 mt-4">
+
+              {/* BULLETS */}
+              <ul className="space-y-5 mt-4">
                 {feature.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2">
+                  <li key={i} className="flex items-start gap-3">
                     <span className="text-[#a53000] text-lg mt-1">•</span>
-                    <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                      {point}
-                    </p>
+                    <div>
+                      <p className="text-gray-900 font-semibold text-base md:text-lg leading-snug">
+                        {point.title}
+                      </p>
+                      <p className="text-gray-600 text-sm md:text-base leading-relaxed mt-1">
+                        {point.description}
+                      </p>
+                    </div>
                   </li>
                 ))}
               </ul>
+
+              {/* BUTTON */}
+              <div className="mt-8 mb-14 flex justify-center md:justify-start">
+                <a href="/book-demo/">
+                  <button className="bg-[#a53000] text-white px-8 py-3 rounded-md font-semibold text-[15px] hover:bg-[#8f2800] transition-all duration-300 shadow-md hover:shadow-lg">
+                    Get Started
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         ))}

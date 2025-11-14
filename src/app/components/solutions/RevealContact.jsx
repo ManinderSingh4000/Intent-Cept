@@ -1,6 +1,6 @@
 // "use client";
 import React from "react";
-import { CheckCircle, XCircle } from "lucide-react";
+import { CheckCircle2, XCircle } from "lucide-react";
 
 export default function RevealContact() {
   return (
@@ -21,7 +21,7 @@ export default function RevealContact() {
           <ul className="space-y-3 text-gray-700 text-sm sm:text-base">
             <li className="flex items-start gap-2">
               <XCircle className="text-red-500 w-5 h-5 mt-[3px]" />
-              Google Analytics shows you <b>numbers</b>, not <b>names</b>.
+              Google Analytics shows you numbers, not names.
             </li>
             <li className="flex items-start gap-2">
               <XCircle className="text-red-500 w-5 h-5 mt-[3px]" />
@@ -29,7 +29,7 @@ export default function RevealContact() {
             </li>
             <li className="flex items-start gap-2">
               <XCircle className="text-red-500 w-5 h-5 mt-[3px]" />
-              Valuable leads stay hidden behind <b>forms and gated content</b>.
+              Valuable leads stay hidden behind forms and gated content.
             </li>
           </ul>
         </div>
@@ -39,15 +39,15 @@ export default function RevealContact() {
           <h3 className="font-semibold text-lg text-gray-900 mb-3">The IntentCept Way</h3>
           <ul className="space-y-3 text-gray-700 text-sm sm:text-base">
             <li className="flex items-start gap-2">
-              <CheckCircle className="text-green-600 w-5 h-5 mt-[3px]" />
-              Identify real visitors — <b>names, companies, and verified contacts</b>.
+              <CheckCircle2 className="text-green-600 w-5 h-5 mt-[3px]" />
+              Identify real visitors — names, companies, and verified contacts.
             </li>
             <li className="flex items-start gap-2">
-              <CheckCircle className="text-green-600 w-5 h-5 mt-[3px]" />
+              <CheckCircle2 className="text-green-600 w-5 h-5 mt-[3px]" />
               Instantly deliver leads to your CRM or automation tools.
             </li>
             <li className="flex items-start gap-2">
-              <CheckCircle className="text-green-600 w-5 h-5 mt-[3px]" />
+              <CheckCircle2 className="text-green-600 w-5 h-5 mt-[3px]" />
               100% cookieless, privacy-safe, and installs in minutes.
             </li>
           </ul>

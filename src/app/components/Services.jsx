@@ -3,13 +3,32 @@ import React from "react";
 import Image from "next/image";
 import { CheckCircle, Dot } from "lucide-react";
 
+
+// Glowing bullet component
+const GlowBullet = () => (
+<div className="relative mt-1 flex-shrink-0">
+<Dot className="text-[#a53000] w-6 h-6 relative z-10" />
+<span className="absolute top-0 left-0 w-12 h-12  blur-xl opacity-70 rounded-full"></span>
+</div>
+);
+
+
+// Section heading with underline
+const SectionHeading = ({ children }) => (
+<h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">{children}</h2>
+);
+
+
 export default function Services() {
   return (
     <section id="services" className="bg-white py-20 px-4 sm:px-6 md:px-12 font-sans text-gray-900">
       
+      <h2 className="text-4xl md:text-5xl  font-bold text-gray-800 mb-10 tracking-relaxed">
+       <span className="text-4xl md:text-5xl text-[#a53000]"> We</span> Serve These <span className="text-[#a53000]">Services</span> 
+      </h2>
+
       {/* Section 1 - Capture New Leads */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-24 md:mb-28">
-        {/* Left Image */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 items-center pb-16">        {/* Left Image */}
         <div className="flex justify-center md:justify-start">
           <Image
             src="/illustrations/Capture-Leads.png"
@@ -22,10 +41,10 @@ export default function Services() {
         </div>
 
         {/* Right Content */}
-        <div className="text-left">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
+        <div className="text-left space-y-6">
+          <SectionHeading className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
             Capture New Leads
-          </h2>
+          </SectionHeading>
           <p className="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
             Unlock Hidden Visitor Data with Full Visibility and Control. Exact
             Match reveals the contact details of website visitors—emails,
@@ -35,7 +54,7 @@ export default function Services() {
 
           <ul className="space-y-4 text-[15px] sm:text-[16px] text-gray-700">
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Real-Time Visitor Tracking</strong>
                 <p className="text-gray-600">
@@ -47,7 +66,7 @@ export default function Services() {
             </li>
 
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Automatic Lead Data Enrichment</strong>
                 <p className="text-gray-600">
@@ -58,7 +77,7 @@ export default function Services() {
             </li>
 
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Seamless Integration with Any Website</strong>
                 <p className="text-gray-600">
@@ -69,7 +88,7 @@ export default function Services() {
             </li>
           </ul>
 
-          <div className="mt-8">
+          <div className="mt-8 mb-14 flex justify-center md:justify-start">
             <a href="/book-demo/">
               <button className="bg-[#a53000] text-white px-8 py-3 rounded-md font-semibold text-[15px] hover:bg-[#8f2800] transition-all duration-300 shadow-md hover:shadow-lg">
                 Get Started
@@ -80,9 +99,11 @@ export default function Services() {
       </div>
 
 
+
+
+
       {/* Section 2 - White-Labeled Platform */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        {/* Left Content */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 items-center pb-12">        {/* Left Content */}
         <div className="order-2 md:order-1 text-left">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
             White-Labeled Platform
@@ -95,7 +116,7 @@ export default function Services() {
 
           <ul className="space-y-4 text-[15px] sm:text-[16px] text-gray-700">
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Custom Domain & Branding</strong>
                 <p className="text-gray-600">
@@ -106,7 +127,7 @@ export default function Services() {
             </li>
 
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Personalized Client Access</strong>
                 <p className="text-gray-600">
@@ -117,7 +138,7 @@ export default function Services() {
             </li>
 
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Full Control, Zero Development</strong>
                 <p className="text-gray-600">
@@ -128,7 +149,7 @@ export default function Services() {
             </li>
           </ul>
 
-          <div className="mt-8">
+          <div className="mt-8 mb-14 flex justify-center md:justify-start">
             <a href="/book-demo/">
               <button className="bg-[#a53000] text-white px-8 py-3 rounded-md font-semibold text-[15px] hover:bg-[#8f2800] transition-all duration-300 shadow-md hover:shadow-lg">
                 Get Started
@@ -150,8 +171,11 @@ export default function Services() {
         </div>
       </div>
 
+
+
+
       {/* Section 1 - Scale Your Agency Without Limits */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-24 md:mb-28">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 items-center pb-12">        {/* Left Content */}
         {/* Left Image */}
         <div className="flex justify-center md:justify-start">
           <Image
@@ -177,7 +201,7 @@ export default function Services() {
 
           <ul className="space-y-4 text-[15px] sm:text-[16px] text-gray-700">
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Unlimited Clients & Campaigns</strong>
                 <p className="text-gray-600">
@@ -188,7 +212,7 @@ export default function Services() {
             </li>
 
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Built for Multi-Account Management</strong>
                 <p className="text-gray-600">
@@ -199,7 +223,7 @@ export default function Services() {
             </li>
 
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>High-Performance Infrastructure</strong>
                 <p className="text-gray-600">
@@ -210,7 +234,7 @@ export default function Services() {
             </li>
           </ul>
 
-          <div className="mt-8">
+          <div className="mt-8  mb-14 flex justify-center md:justify-start">
             <a href="/book-demo/">
               <button className="bg-[#a53000] text-white px-8 py-3 rounded-md font-semibold text-[15px] hover:bg-[#8f2800] transition-all duration-300 shadow-md hover:shadow-lg">
                 Get Started
@@ -220,8 +244,10 @@ export default function Services() {
         </div>
       </div>
 
+
+
       {/* Section 2 - Attract High-Intent Leads */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 items-center pb-12">        {/* Left Content */}
         {/* Left Content */}
         <div className="order-2 md:order-1 text-left">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
@@ -235,7 +261,7 @@ export default function Services() {
 
           <ul className="space-y-4 text-[15px] sm:text-[16px] text-gray-700">
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Keyword-Based Lead Triggers</strong>
                 <p className="text-gray-600">
@@ -246,7 +272,7 @@ export default function Services() {
             </li>
 
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Smart Campaigns</strong>
                 <p className="text-gray-600">
@@ -257,7 +283,7 @@ export default function Services() {
             </li>
 
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Campaign Performance Analytics</strong>
                 <p className="text-gray-600">
@@ -268,7 +294,7 @@ export default function Services() {
             </li>
           </ul>
 
-          <div className="mt-8">
+          <div className="mt-8  mb-14 flex justify-center md:justify-start">
             <a href="/book-demo/">
               <button className="bg-[#a53000] text-white px-8 py-3 rounded-md font-semibold text-[15px] hover:bg-[#8f2800] transition-all duration-300 shadow-md hover:shadow-lg">
                 Get Started
@@ -291,8 +317,10 @@ export default function Services() {
         </div>
 
 
+
+
         {/* Section 1 - Unlock High-Quality B2B Data */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-24 md:mb-28">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 items-center pb-12">        {/* Left Content */}
         {/* Left Image */}
         <div className="flex justify-center md:justify-start">
           <Image
@@ -306,7 +334,7 @@ export default function Services() {
         </div>
 
         {/* Right Content */}
-        <div className="text-left">
+        <div className="text-left space-y-6">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
             Unlock High-Quality B2B Data That Drives Results
           </h2>
@@ -318,7 +346,7 @@ export default function Services() {
 
           <ul className="space-y-4 text-[15px] sm:text-[16px] text-gray-700">
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Access to Business Contacts</strong>
                 <p className="text-gray-600">
@@ -329,7 +357,7 @@ export default function Services() {
               </div>
             </li>
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>In-Depth Company Insights</strong>
                 <p className="text-gray-600">
@@ -339,7 +367,7 @@ export default function Services() {
               </div>
             </li>
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Fuel Sales, Partnerships & Outreach</strong>
                 <p className="text-gray-600">
@@ -350,7 +378,7 @@ export default function Services() {
             </li>
           </ul>
 
-          <div className="mt-8">
+          <div className="mt-8 mb-14 flex justify-center md:justify-start">
             <a href="/book-demo/">
               <button className="bg-[#a53000] text-white px-8 py-3 rounded-md font-semibold text-[15px] hover:bg-[#8f2800] transition-all duration-300 shadow-md hover:shadow-lg">
                 Get Started
@@ -359,6 +387,9 @@ export default function Services() {
           </div>
         </div>
       </div>
+
+
+
 
       {/* Section 2 - Developer Tools & API Access */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-24 md:mb-28">
@@ -375,7 +406,7 @@ export default function Services() {
 
           <ul className="space-y-4 text-[15px] sm:text-[16px] text-gray-700">
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Robust API Endpoints</strong>
                 <p className="text-gray-600">
@@ -385,7 +416,7 @@ export default function Services() {
               </div>
             </li>
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Custom Webhook Support</strong>
                 <p className="text-gray-600">
@@ -395,7 +426,7 @@ export default function Services() {
               </div>
             </li>
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Secure, Scalable, and Built for Growth</strong>
                 <p className="text-gray-600">
@@ -406,7 +437,7 @@ export default function Services() {
             </li>
           </ul>
 
-          <div className="mt-8">
+          <div className="mt-8 mb-14 flex justify-center md:justify-start">
             <a href="/book-demo/">
               <button className="bg-[#a53000] text-white px-8 py-3 rounded-md font-semibold text-[15px] hover:bg-[#8f2800] transition-all duration-300 shadow-md hover:shadow-lg">
                 Get Started
@@ -428,6 +459,9 @@ export default function Services() {
         </div>
       </div>
 
+
+
+
       {/* Section 3 - Powerful Integrations */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-24 md:mb-28">
         {/* Left Image */}
@@ -443,7 +477,7 @@ export default function Services() {
         </div>
 
         {/* Right Content */}
-        <div className="text-left">
+        <div className="text-left space-y-6">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
             Powerful Integrations That Fit Your Workflow
           </h2>
@@ -455,7 +489,7 @@ export default function Services() {
 
           <ul className="space-y-4 text-[15px] sm:text-[16px] text-gray-700">
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Connect with Top Platforms</strong>
                 <p className="text-gray-600">
@@ -465,7 +499,7 @@ export default function Services() {
               </div>
             </li>
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Flexible Workflows for Every Client</strong>
                 <p className="text-gray-600">
@@ -475,7 +509,7 @@ export default function Services() {
               </div>
             </li>
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Seamless Zapier Integration</strong>
                 <p className="text-gray-600">
@@ -486,7 +520,7 @@ export default function Services() {
             </li>
           </ul>
 
-          <div className="mt-8">
+          <div className="mt-8 mb-14 flex justify-center md:justify-start">
             <a href="/book-demo/">
               <button className="bg-[#a53000] text-white px-8 py-3 rounded-md font-semibold text-[15px] hover:bg-[#8f2800] transition-all duration-300 shadow-md hover:shadow-lg">
                 Get Started
@@ -495,6 +529,8 @@ export default function Services() {
           </div>
         </div>
       </div>
+
+
 
       {/* Section 4 - Targeted Data by Location */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -511,7 +547,7 @@ export default function Services() {
 
           <ul className="space-y-4 text-[15px] sm:text-[16px] text-gray-700">
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Zipcode, City & State Level Targeting</strong>
                 <p className="text-gray-600">
@@ -521,7 +557,7 @@ export default function Services() {
               </div>
             </li>
             <li className="flex items-start gap-2">
-              <Dot className="text-[#a53000] w-5 h-5 mt-[3px]" />
+              <GlowBullet/>
               <div>
                 <strong>Demographics & Financial Profiles</strong>
                 <p className="text-gray-600">
@@ -532,7 +568,7 @@ export default function Services() {
             </li>
           </ul>
 
-          <div className="mt-8">
+          <div className="mt-8 mb-14 flex justify-center md:justify-start">
             <a href="/book-demo/">
               <button className="bg-[#a53000] text-white px-8 py-3 rounded-md font-semibold text-[15px] hover:bg-[#8f2800] transition-all duration-300 shadow-md hover:shadow-lg">
                 Get Started

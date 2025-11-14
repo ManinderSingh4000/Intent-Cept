@@ -21,7 +21,7 @@ export default function Hero() {
 
       {/* CTA */}
       <a href="/book-demo/">
-        <button className="mt-8 md:mt-10 bg-[#a53000] text-white px-8 md:px-10 py-3.5 md:py-4 rounded-full font-semibold text-base md:text-lg shadow-md hover:bg-[#8f2800] hover:shadow-lg transition-all duration-300">
+        <button className="mt-8 md:mt-10 bg-[#a53000] text-white px-8 md:px-10 py-3.5 md:py-4 rounded-md font-semibold text-base md:text-lg shadow-md hover:bg-[#8f2800] hover:shadow-lg transition-all duration-300">
           Get Started
         </button>
       </a>
