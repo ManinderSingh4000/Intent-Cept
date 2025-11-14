@@ -48,7 +48,7 @@ export default function BookDemoPage() {
                   alt={person.name}
                   width={100}
                   height={100}
-                  quality={90}
+                  quality={75}
                   className="w-32 h-32 rounded-full object-cover border border-gray-300 mb-4"
                   priority
                 />

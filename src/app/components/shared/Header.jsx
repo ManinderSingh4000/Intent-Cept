@@ -16,19 +16,19 @@ const router = useRouter();
 
   return (
     <header className="w-full bg-white border-b border-gray-100 shadow-sm font-sans sticky top-0 z-[1000]">
-      <div className="max-w-7xl mx-auto flex justify-between items-center py-3 px-4 sm:px-8 relative">
+     <div className="max-w-7xl mx-auto flex justify-between items-center py-3 px-4 sm:px-8 relative">
 
-        {/* Logo - Centered Properly on Mobile */}
-        <a href="/" className="flex items-center">
-          <Image
-            src="/Logos/IntentCept_Logo.png"
-            alt="IntentCept Logo"
-            width={110}
-            height={40}
-            priority
-            className="h-10 sm:h-12 w-auto object-contain"
-          />
-        </a>
+          <a href="/" className="flex items-center shrink-0">
+            <Image
+              src="/Logos/IntentCept_Logo.png"
+              alt="IntentCept Logo"
+              width={120}
+              height={60}
+              priority
+              className="h-[55px] sm:h-[75px] w-auto object-contain"
+            />
+          </a>
+
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-10 lg:gap-14 text-gray-800 font-semibold text-[15px] lg:text-[16px]">
@@ -194,7 +194,7 @@ const router = useRouter();
     {/* CTA Button */}
     <div className="pt-4">
       <a href="/book-demo/">
-        <button className="w-full bg-[#a53000] text-white py-2 rounded-md font-semibold hover:bg-[#8f2800] transition-all duration-300">
+        <button className="w-full bg-[#B31C04] text-white py-2 rounded-full font-semibold hover:bg-[#8f2800] transition-all duration-300">
           Book A Demo
         </button>
       </a>
