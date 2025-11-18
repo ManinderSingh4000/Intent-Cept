@@ -23,7 +23,7 @@ export default function Services() {
   return (
     <section id="services" className="bg-white py-20 px-4 sm:px-6 md:px-12 font-sans text-gray-900">
       
-      <h2 className="text-4xl md:text-5xl  font-bold text-gray-800 mb-10 tracking-relaxed">
+      <h2 className="text-4xl md:text-5xl  font-bold text-gray-800 mb-10 tracking-relaxed  text-center mb-25">
        <span className="text-4xl md:text-5xl text-[#a53000]"> We</span> Serve These <span className="text-[#a53000]">Services</span> 
       </h2>
 

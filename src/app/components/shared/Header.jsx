@@ -22,10 +22,11 @@ const router = useRouter();
             <Image
               src="/Logos/IntentCept_Logo.png"
               alt="IntentCept Logo"
-              width={120}
-              height={60}
+              width={200}
+              height={80}
+              // quality={80}
               priority
-              className="h-[55px] sm:h-[75px] w-auto object-contain"
+              className="h-[25px] sm:h-[75px] w-auto object-contain"
             />
           </a>
 
